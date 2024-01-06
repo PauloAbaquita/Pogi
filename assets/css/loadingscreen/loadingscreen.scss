@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//light
+$textcolor:#04232A;
+$backgroundcolor:#F6FDFE;
+$primarycolor:#E23D18;
+$secondarycolor:#EEF8B9;
+$accent:#D03816;
+
+//dark
+$textcolordark:#D5F4FB;
+$backgroundcolordark:#010809;
+$primarycolordark:#E7421D;
+$secondarycolordark:#3B4607;
+$accentdark:#E9512F;
+
+//fonts
+$primaryfont:'florensa-Demo';
+
+@font-face {
+    font-family: $primaryfont;
+    src: url(/assets/fonts/Florensa-Demo.ttf) format('truetype');
+}
+.loading-screen{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color:$backgroundcolordark;
+    z-index: 2;
+    // visibility: hidden  ;
+    .loading-screen-h1{
+        h1{
+            font-family: $primaryfont;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 4rem;
+            color: $textcolordark;
+        }
+    }
+    .loading-pic-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .loading-pic-wrapper{
+            position: relative;
+            width: 50vw;
+            height: 100vh;
+            .img-wrapper,
+            .img-wrapper-main{
+                width: 30%;
+                position: absolute;
+                clip-path: inset(0 0 0 0 );}
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .img-wrapper-main:nth-child(1){
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width:clamp(200px, 100%, 450px);
+            }
+            .img-wrapper:nth-child(2){
+                top: 40%;
+                left:20%;
+                transform: translate(-50%,-50%);
+                width:clamp(100px, 50%, 150px);
+            }
+            .img-wrapper:nth-child(3){
+                top: 75%;
+                left:25%;
+                transform: translate(-50%,-50%);
+                width:clamp(100px, 50%, 120px);
+            }
+            .img-wrapper:nth-child(4){
+                top: 20%;
+                left:80%;
+                transform: translate(-50%,-50%);
+                width:clamp(100px, 50%, 200px);
+            }
+            .img-wrapper:nth-child(5){
+                top: 75%;
+                left:70%;
+                transform: translate(-50%,-50%);
+                width:clamp(100px, 50%, 200px);
+            }
+        }
+    }
+   
+}

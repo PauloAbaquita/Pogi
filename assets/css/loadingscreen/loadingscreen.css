@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "florensa-Demo";
+  src: url(/assets/fonts/Florensa-Demo.ttf) format("truetype");
+}
+.loading-screen {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #010809;
+  z-index: 2;
+}
+.loading-screen .loading-screen-h1 h1 {
+  font-family: "florensa-Demo";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: #D5F4FB;
+}
+.loading-screen .loading-pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-screen .loading-pic-container .loading-pic-wrapper {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+}
+.loading-screen .loading-pic-container .loading-pic-wrapper .img-wrapper,
+.loading-screen .loading-pic-container .loading-pic-wrapper .img-wrapper-main {
+  width: 30%;
+  position: absolute;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+}
+.loading-screen .loading-pic-container .loading-pic-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.loading-screen .loading-pic-container .loading-pic-wrapper .img-wrapper-main:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(200px, 100%, 450px);
+}
+.loading-screen .loading-pic-container .loading-pic-wrapper .img-wrapper:nth-child(2) {
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: clamp(100px, 50%, 150px);
+}
+.loading-screen .loading-pic-container .loading-pic-wrapper .img-wrapper:nth-child(3) {
+  top: 75%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: clamp(100px, 50%, 120px);
+}
+.loading-screen .loading-pic-container .loading-pic-wrapper .img-wrapper:nth-child(4) {
+  top: 20%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: clamp(100px, 50%, 200px);
+}
+.loading-screen .loading-pic-container .loading-pic-wrapper .img-wrapper:nth-child(5) {
+  top: 75%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: clamp(100px, 50%, 200px);
+}/*# sourceMappingURL=loadingscreen.css.map */
