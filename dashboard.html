@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/dashboard/dashboard.css">
+</head>
+<body>
+    <div class="cursor">
+        <img src="./assets/picture/logo.png" alt="">
+    </div>
+
+    <section class="extra">
+        <div class="logo cursor-scale small">
+            <h1 class="title cursor-scale small">POGI</h1>
+        </div>
+
+        <div class="button-wrapper cursor-scale small">
+            <button class = "logout cursor-scale small"><a href="controllers/Logout/logout.php" >Logout</a></button>
+        </div>
+       
+    </section>
+   
+<div class="app">
+    
+    <div class="cardList cursor-scale ">
+        <button class="cardList__btn btn btn--left">
+            <div class="icon cursor-scale small">
+                <svg>
+                    <use xlink:href="#arrow-left"></use>
+                </svg>
+            </div>
+        </button>
+
+        <div class="cards__wrapper">
+            <div class="card current--card">
+                <div class="card__image">
+                    <img src="./assets/picture/john.jpg" alt="" />
+                </div>
+            </div>
+         
+
+            <div class="card next--card">
+                <div class="card__image">
+                    <img src="./assets/picture/ralp.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="card previous--card">
+                <div class="card__image">
+                    <img src="./assets/picture/jaja.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <button class="cardList__btn btn btn--right">
+            <div class="icon cursor-scale small">
+                <svg>
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </div>
+        </button>
+    </div>
+
+    <div class="infoList">
+        <div class="info__wrapper">
+            <div class="info current--info">
+                <h1 class="text name">John Gantuangco </h1>
+                <h4 class="text location">(john john)</h4>
+                <p class="text description">Pinaka bata ug gwapo na maestro sa CTU</p>
+            </div>
+
+            <div class="info next--info">
+                <h1 class="text name">Ralph Aricayos</h1>
+                <h4 class="text location">(Papart)</h4>
+                <p class="text description">Chubby na gwapo</p>
+            </div>
+
+            <div class="info previous--info">
+                <h1 class="text name">Jose Rene Generosa</h1>
+                <h4 class="text location">(JAJA)</h4>
+                <p class="text description">Basketball player na gwapo, Education Tirada</p>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="app__bg">
+        <div class="app__bg__image current--image">
+            <img src="./assets/picture/john.jpg" alt="" />
+        </div>
+        <div class="app__bg__image next--image">
+            <img src="./assets/picture/ralp.jpg" alt="" />
+        </div>
+        <div class="app__bg__image previous--image">
+            <img src="./assets/picture/jaja.jpg" alt="" />
+        </div>
+      
+        </div>
+    </div>
+
+    
+</div>
+
+    <div class="loading__wrapper">
+        <div class="loader--text">Loading...</div>
+            <div class="loader">
+                <span></span>
+        </div>  
+    </div>
+
+
+    <svg class="icons" style="display: none;">
+    <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='328 112 184 256 328 400'
+                    style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+    </symbol>
+    <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='184 112 328 256 184 400'
+                    style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+    </symbol>
+    </svg>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+    <script src="./js/lenis.js"></script>
+
+    <script src="./js/dashboard.js" defer></script>
+    <script src="./js/cursorAnim.js" defer></script>
+
+</body>
+</html>
